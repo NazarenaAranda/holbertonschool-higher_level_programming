@@ -7,20 +7,17 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *tortuguita;
-	listint_t *liebre;
+	listint_t *tortuguita = list, *liebre = list;
 
-	if (list == NULL)
-		return (0);
-	if (list->next == NULL)
+	if (list == NULL || list->next == NULL)
 		return (0);
 
 	while (tortuguita && liebre && liebre->next)
 	{
+		tortuguita = tortuguita->next;                                                      liebre = liebre->next->next;
+
 		if (tortuguita == liebre)
 			return (1);
-		tortuguita = tortuguita->next;
-		liebre = liebre->next->next;
 	}
 	return (0);
 }

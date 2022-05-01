@@ -8,7 +8,7 @@ if __name__ == "__main__":
     if lsn == 1:
         print("argument:")
     if lsn > 1:
-        print("argumments:")
+        print("arguments:")
     aux = 0
     for a in sys.argv:
         if a != "./2-args.py":

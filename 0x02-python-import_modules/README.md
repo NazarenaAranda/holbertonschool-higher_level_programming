@@ -1,1 +1,3 @@
-readme de import modules
+EJERCICIO 0:	
+Algo nuevo que vemos en el primer ejercicio es if name == main, lo que hacemos usando esto es ver si el modulo ha sido ejecutado directamente o no (importado). En otras palabaras es la forma de ejecutar un script en pytho directamente desde la terminal,  lo que hace basicamente es diferenciar si el script es el prinncipal o es un import. La variable __name__ la asigna el compilador con __main__. odo archivo de codigo en python tiene un atributo especial llamado name que define el espacio de nombres en el que se esta ejecutando , es para identificar de forma unica un archivo de codigo. main es el nommbre en el que se ejecuta el codigo de nivel superior (programa principal).
+Otra cosa nueva es from e import, luego de from decimos de donde queremos importar, y  luego de import va lo que vamos a importar.

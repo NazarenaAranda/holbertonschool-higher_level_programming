@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     import sys
     lsn = len(sys.argv) - 1
-    print(f"{lsn:d} ",end='')
+    print(f"{lsn:d} ", end='')
     if lsn == 0:
         print("arguments:.")
     if lsn == 1:

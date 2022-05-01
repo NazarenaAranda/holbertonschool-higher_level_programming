@@ -6,4 +6,4 @@ if __name__ == "__main__":
     for a in sys.argv:
         if a != "./3-infinite_add.py":
             sum += int(a)
-        print(f"{sum}")
+    print(f"{sum}")

@@ -18,5 +18,3 @@ if __name__ == "__main__":
     elif sys.argv[2] == '/':
         res = div(int(sys.argv[1]), int(sys.argv[3]))
     print(f"{sys.argv[1]} {sys.argv[2]} {sys.argv[3]} = {res}")
-
-

@@ -1,1 +1,5 @@
-readme de los archivos txt
+type() Si se pasa un solo argumento (objeto) a type() incorporado, devuelve el tipo del objeto dado.
+------------------------------------------------------------------------------------------------------
+La función id () La función incorporada id () recibe como argumento un objeto y retorna otro objeto que sirve como identificador único para el primero.
+---------------------------------------------------------------------------------------------------------------------
+

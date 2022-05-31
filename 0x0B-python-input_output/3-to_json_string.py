@@ -4,6 +4,8 @@
 
 import json
 """ prototype """
+
+
 def to_json_string(my_obj):
     """ devovler objeto """
     return json.dumps(my_obj)

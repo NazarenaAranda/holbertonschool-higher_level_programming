@@ -1,5 +1,5 @@
 Qué significan *args y **kwargs como parámetros:
-------------------------------------------------
+- - - - - - - - - - -  - - -  - - - - - - - - - - 
 *ARGS:
 ------
 En Python, el parámetro especial *args en una función se usa para pasar (de forma opcional) un número variable de argumentos posicionales.

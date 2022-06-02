@@ -10,3 +10,7 @@ Más detalladamente sería:
 - Es un parámetro opcional. Se puede invocar a la función haciendo uso del mismo, o no.
 - El número de argumentos al invocar a la función es variable.
 - Son parámetros posicionales, por lo que, a diferencia de los parámetros con nombre, su valor depende de la posición en la que se pasen a la función.
+
+Se usaría el parámetra *args en el caso de que no quieras limitar a tu funcion, es decir, en vez de darle determinado valor, al usar *args podemos pasar tantos argumentos 
+como queramos.
+- - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - -

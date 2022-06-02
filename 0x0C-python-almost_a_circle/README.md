@@ -25,5 +25,11 @@ Diferencias con *ARGS:
 - Al tratarse de un diccionario, el orden de los parámetros no importa. Los parámetros se asocian en función de las claves del diccionario.
 
 Se usaría cuando no se sabe cuantos argumentos se le va a dar al diccionarío.
-- -  - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - 
+- -  - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Atributos privados:
+-------------------
+Solo se puede acceder a los atributos privados desde los métodos de la clase. En otras palabras, no pueden ser accesibles desde fuera de la clase.
+Python no tiene un concepto de atributos privados. En otras palabras, todos los atributos son accesibles desde el exterior de una clase.
+Por convención, puede definir un atributo privado prefijando un único guión bajo (_): 
 

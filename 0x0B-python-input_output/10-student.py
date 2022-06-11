@@ -13,9 +13,9 @@ class Student:
 
     def to_json(self, attrs=None):
         """ return diccionario"""
+        dicti = self.__dict__
+        if attrs is None:
+            return dicti
 
-        if attrs is not None:
-            return {key: value for key, value in self.__dict__.items()
-                    if key in attrs}
-
-            return self.__dict__
+        dic = {key: value for key, value in dicti.items() if key in attrs}
+        return dic 

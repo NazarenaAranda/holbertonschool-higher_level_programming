@@ -12,14 +12,11 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """ vbnmkl"""
+        """ return diccionario"""
 
-        if type(attrs) is list:
-            a_list = {}
-            for j in attrs:
-                for key, value in self.__dict__.items():
-                    if key == j:
-                        a_list[key] = value
-                        return a_list
-                    return self.__dict__
+        if attrs is not None:
+            return {key: value for key, value in self.__dict__.items()
+                    if key in attrs}
+
+            return self.__dict__
 

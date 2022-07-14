@@ -7,8 +7,7 @@ BaseGeometry = __import__(
 
 class Rectangle(BaseGeometry):
     """clase rectangle"""
-
-    def  __init__(self, width, height):
+    def __init__(self, width, height):
         """instanciacion con width y height"""
         self.__width = width
         self.__height = height

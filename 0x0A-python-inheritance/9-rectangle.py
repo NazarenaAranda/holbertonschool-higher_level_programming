@@ -17,7 +17,7 @@ class Rectangle(BaseGeometry):
         def area(self):
             """metodo area"""
             return(self.__width * self.__height)
+
         def __str__(self):
             """se incorpora cuando se ejecute print"""
-            return("[Rectangle] {}/{}".
-                    format(self.__width, self.__height))
+            return("[Rectangle] {}/{}".format(self.__width, self.__height))

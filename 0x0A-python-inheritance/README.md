@@ -7,4 +7,22 @@ tanto la herencia nos proporciona una manera de organizar el código para no ten
 
 dir ()
 ------------
-dir () es una funcion que devuelve una lista de los atributos y métodos de cualquier objeto (por ejemplo, funciones, módulos, cadenas, listas, diccionarios, etc.) dir () intenta devolver una lista válida de atributos del objeto al que se llama
+dir () es una funcion que devuelve una lista de los atributos y métodos de cualquier objeto (por ejemplo, funciones, módulos, cadenas, listas, diccionarios, etc.) dir () intenta devolver una lista válida de atributos del objeto al que se llamaI.
+
+----------------------------------------------------------------------------------
+
+## Las funciones de comparación de objetos son útiles para todos los objetos, y llevan el nombre de los operadores de comparación enriquecida que soportan:
+
+operator.lt(a, b)
+operator.le(a, b)
+operator.eq(a, b)
+operator.ne(a, b)
+operator.ge(a, b)
+operator.gt(a, b)
+operator.__lt__(a, b)
+operator.__le__(a, b)
+operator.__eq__(a, b)
+operator.__ne__(a, b)
+operator.__ge__(a, b)
+operator.__gt__(a, b)
+Realiza «comparaciones enriquecidas» entre a y b. Específicamente, lt(a, b) es equivalente a a < b, le(a, b) es equivalente a a <= b, eq(a, b) es equivalente a a == b, ne(a, b) es equivalente a a != b, gt(a, b) es equivalente a a > b y ge(a, b) es equivalente a a >= b. Tenga en cuenta que estas funciones pueden retornar cualquier valor, que puede o no ser interpretable como un valor booleano.

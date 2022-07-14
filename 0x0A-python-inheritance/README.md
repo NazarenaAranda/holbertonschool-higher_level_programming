@@ -7,7 +7,27 @@ tanto la herencia nos proporciona una manera de organizar el código para no ten
 
 dir ()
 ------------
-dir () es una funcion que devuelve una lista de los atributos y métodos de cualquier objeto (por ejemplo, funciones, módulos, cadenas, listas, diccionarios, etc.) dir () intenta devolver una lista válida de atributos del objeto al que se llamaI.
+dir () es una funcion que devuelve una lista de los atributos y métodos de cualquier objeto (por ejemplo, funciones, módulos, cadenas, listas, diccionarios, etc.) dir () intenta devolver una lista válida de atributos del objeto al que se llama.
+
+-----------------------------------------------------------------------------
+
+## Función super
+
+### Esta función nos permite invocar y conservar un método o atributo de una clase padre (primaria) desde una clase hija (secundaria) sin tener que nombrarla explícitamente. Esto nos brinda la ventaja de poder cambiar el nombre de la clase padre (base) o hija (secundaria) cuando queramos y aún así mantener un código funcional, sencillo  y mantenible. no necesitamos especificar la clase padre, por lo que podremos cambiarle el nombre en cualquier momento y nuestro código seguirá funcional.
+
+``` class Padre(object): #Creamos la clase Padre
+    def __init__(self, ojos, cejas): #Definimos los Atributos
+        self.ojos = ojos
+        self.cejas = cejas
+        
+class Hijo(Padre): #Creamos clase hija que hereda de Padre
+    def __init__(self, ojos, cejas, cara): #creamos el constructor de la clase especificando atributos
+        super().__init__(ojos, cejas)#Solicitamos a super llamar de la clase padre esos atributos
+        self.cara = cara #Especificamos el nuevo atributo para Hijo
+        
+Tomas = Hijo('Marrones', 'Negras', 'Larga')
+print (Tomas.ojos, Tomas.cejas, Tomas.cara)
+```
 
 ----------------------------------------------------------------------------------
 
@@ -53,20 +73,3 @@ print(hasattr(rect, "area"))  # False
     
 -------------------------------------------------------------------------
 
-## Función super
-
-### Esta función nos permite invocar y conservar un método o atributo de una clase padre (primaria) desde una clase hija (secundaria) sin tener que nombrarla explícitamente. Esto nos brinda la ventaja de poder cambiar el nombre de la clase padre (base) o hija (secundaria) cuando queramos y aún así mantener un código funcional, sencillo  y mantenible. no necesitamos especificar la clase padre, por lo que podremos cambiarle el nombre en cualquier momento y nuestro código seguirá funcional.
-
-``` class Padre(object): #Creamos la clase Padre
-    def __init__(self, ojos, cejas): #Definimos los Atributos
-        self.ojos = ojos
-        self.cejas = cejas
-        
-class Hijo(Padre): #Creamos clase hija que hereda de Padre
-    def __init__(self, ojos, cejas, cara): #creamos el constructor de la clase especificando atributos
-        super().__init__(ojos, cejas)#Solicitamos a super llamar de la clase padre esos atributos
-        self.cara = cara #Especificamos el nuevo atributo para Hijo
-        
-Tomas = Hijo('Marrones', 'Negras', 'Larga')
-print (Tomas.ojos, Tomas.cejas, Tomas.cara)
-```

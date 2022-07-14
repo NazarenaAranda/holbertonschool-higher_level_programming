@@ -39,7 +39,8 @@ Realiza «comparaciones enriquecidas» entre a y b. Específicamente, lt(a, b) e
 
 rect = Rectangulo(10, 5)
 print(hasattr(rect, "b"))     # True
-print(hasattr(rect, "area"))  # False ```
+print(hasattr(rect, "area"))  # False
+```
 
 ### La función opera haciendo uso de getattr() y caputurando AttributeError, de modo que es similar a:
 
@@ -48,4 +49,5 @@ print(hasattr(rect, "area"))  # False ```
         getattr(obj, attr)
     except AttributeError:
         return False
-    return True ```
+    return True 
+    ```

@@ -49,9 +49,10 @@ print(hasattr(rect, "area"))  # False
         getattr(obj, attr)
     except AttributeError:
         return False
-    return True 
-    ```
-   ------------------------------------------------
+    return True ```
+    
+-------------------------------------------------------------------------
+
 ## Función super
 
 ### Esta función nos permite invocar y conservar un método o atributo de una clase padre (primaria) desde una clase hija (secundaria) sin tener que nombrarla explícitamente. Esto nos brinda la ventaja de poder cambiar el nombre de la clase padre (base) o hija (secundaria) cuando queramos y aún así mantener un código funcional, sencillo  y mantenible. no necesitamos especificar la clase padre, por lo que podremos cambiarle el nombre en cualquier momento y nuestro código seguirá funcional.

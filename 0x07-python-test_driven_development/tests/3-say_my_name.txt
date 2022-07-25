@@ -1,56 +1,40 @@
-The ``2-matrix_divided`` module
-============================
+=============================
+The ``3-say_my_name`` module
+=============================
 
-Using ``matrix_divided`` function
----------------------
+Using ``say_my_name``
+----------------------
 
->>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+Import the function:
 
->>> matrix_divided([], 3)
-Traceback (most recent call last):
-    ...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
+    >>> say_my_name  = __import__('3-say_my_name').say_my_name
 
->>> matrix_divided([[]], 3)
-Traceback (most recent call last):
-    ...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
+Now test it:
 
->>> matrix_divided([[1,2,3],[1,2,3]], "hello")
-Traceback (most recent call last):
-    ...
-TypeError: div must be a number
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
 
->>> matrix_divided([[1,2,3],[1,2,3]], 0)
-Traceback (most recent call last):
-    ...
-ZeroDivisionError: division by zero
+    >>> say_my_name("Bob")
+    My name is Bob 
 
->>> matrix_divided([[1,2,3], [2,3,'h']], 3)
-Traceback (most recent call last):
-    ...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
+    >>> say_my_name(12, "White")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
 
->>> matrix_divided([[1,2,3], [1,2]], 3)
-Traceback (most recent call last):
-    ...
-TypeError: Each row of the matrix must have the same size
+    >>> say_my_name("Barry", None)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
 
->>> print(matrix_divided([[1,2,3], [4,5,6]], 3))
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+    >>> say_my_name(1, 2)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
 
->>> print(matrix_divided())
-Traceback (most recent call last):
-    ...
-TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+    >>> say_my_name("", "Holberton")
+    My name is  Holberton
 
->>> print(matrix_divided([[1,2,3], [1,2,3]]))
-Traceback (most recent call last):
-    ...
-TypeError: matrix_divided() missing 1 required positional argument: 'div'
+    >>> say_my_name("", "")
+    My name is  
 
->>> print(matrix_divided([[1,2,3], [1,2,3]], float('inf')))
-[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
-
->>> print(matrix_divided([[1,2,3], [1,2,3]], float('-inf')))
-[[-0.0, -0.0, -0.0], [-0.0, -0.0, -0.0]]
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'

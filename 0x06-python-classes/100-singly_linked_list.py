@@ -12,8 +12,6 @@ class Node:
 
     @property
     def next_node(self):
-        """ Getter of next_node property
-        """
         return self.__next_node
 
     @data.setter

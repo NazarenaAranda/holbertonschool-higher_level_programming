@@ -29,7 +29,7 @@ class TestMaxInteger(unittest.TestCase):
     def test6(self):
         self.assertEqual(max_integer([-1, -4, -7, -3, -8]), -1)
 
-    def test0(self):
+    def test7(self):
         with self.assertRaises(TypeError):
             max_integer(['naza', 6, 3, 7, 'hola'])
 

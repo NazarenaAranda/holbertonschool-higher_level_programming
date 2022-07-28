@@ -8,7 +8,7 @@ class TestMaxInteger(unittest.TestCase):
     """class TestMaxInteger"""
     def test0(self):
         with self.assertRaises(TypeError):
-            max_integer([´naza´, 1, 3, 5])
+            max_integer(["naza", 1, 3, 5])
 
     def test1(self):
         self.assertEqual(max_integer([]), None)

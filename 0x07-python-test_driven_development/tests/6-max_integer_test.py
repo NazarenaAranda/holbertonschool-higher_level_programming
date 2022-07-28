@@ -33,5 +33,9 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_integer(['naza', 6, 3, 7, 'hola'])
 
+    def test8(self):
+        with self.assertRaises(TypeError):
+            max_integer([' ', 1, 7])
+
 if __name__ == '__main__':
     unittest.main()

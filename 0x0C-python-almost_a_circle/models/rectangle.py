@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """crear clase"""
+import json
+from models.base import Base
 
 
 class Rectangle:
@@ -10,5 +12,21 @@ class Rectangle:
         self.__x = x
         self.__y = y
         super().__init__(id)
+
+    @property
+    def width(self):
+        return self.__width
+
+    @property
+    def height(self):
+        return self.__height
+
+    @property
+    def x(self):
+        return self.__x
+
+    @property
+    def y(self):
+        return self.__y
 
 

@@ -5,6 +5,7 @@
 class Square():
     """instantion"""
     def __init__(self, size=0, position=(0, 0)):
+        """ size and position"""
         self.__size = size
         self.__position = position
 
@@ -45,4 +46,4 @@ class Square():
             for _ in range(self.__position[1]):
                 print()
         for _ in range(self.__size):
-                print(" " * self.__position[0] + "#" * self__size)
+            print(" " * self.__position[0] + "#" * self__size)

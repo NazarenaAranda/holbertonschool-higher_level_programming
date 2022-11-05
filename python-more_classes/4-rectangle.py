@@ -39,3 +39,17 @@ class Rectangle:
         if (self.__width == 0 or self.__height == 0):
             return 0
         return ((self.__height * 2) + (self.__width * 2))
+
+    def __str__(self):
+        empty = ""
+        if (self.__width == 0 or self.__height == 0):
+            return empty
+        else:
+            for _ in range(self.__height):
+                for _ in range(self.__width):
+                    empty += "#"
+                empty += '\n'
+        return empty[:-1]
+
+    def __repr__(self):
+        return(f"Rectangle({self.__width}, {self.__height})")

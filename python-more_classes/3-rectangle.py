@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """empty class Rectangle that defines a rectangle"""
 
+
 class Rectangle:
-    """empty class"""
-    
+    """empty class""" 
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width

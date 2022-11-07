@@ -1,0 +1,16 @@
+>>> p_t = __import__('0-add_integer').add_integer
+
+	>>> p_t("hola", "e, i, o")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	>>> p_t()
+	Traceback (most recent call last):
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+
+	>>> p_t(40)
+	138
+
+	>>> p_t("a", 7)
+	Traceback (most recent call last):
+	TypeError: a must be an integer

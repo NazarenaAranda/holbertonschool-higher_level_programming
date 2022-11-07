@@ -14,3 +14,11 @@
 	>>> p_t("a", 7)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
+
+	>>> p_t(1000e1000)
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+
+	>>> p_t(float('Nan'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer

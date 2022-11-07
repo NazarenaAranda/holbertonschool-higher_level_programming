@@ -9,12 +9,18 @@
 
 	>>> s_t([[9], ["a"]], 8)
 	Traceback (most recent call last):
-	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	TypeError: matrix must be a matrix(list of lists) of integers/floats
 
 	>>> s_t([["hola"], ["naza"]], "chau")
 	Traceback (most recent call last):
-	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	TypeError: matrix must be a matrix(list of lists) of integers/floats
 
 	>>> s_t()
 	Traceback (most recent call last):
 	TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+	>>> s_t([[12, 34, 54], [31, 44, 56]], "b")
+	Traceback (most recent call last):
+	TypeError: unsupported operand type(s) for /: 'int' and 'str'
+
+

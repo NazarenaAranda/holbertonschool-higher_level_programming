@@ -12,9 +12,9 @@ def matrix_divided(matrix, div):
         matrix2.append([])
         for j in matrix[i]:
             if not isinstance(j, int) and not isinstance(j, float):
-                raise TypeError("matrix must be a matrix
-                                (list of lists) of integers/float")
+                raise TypeError("matrix must be a matrix(list of lists) of integers/floats")
             matrix2[i].append(round(j / div, 2))
+
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
     elif type(div) == 0:

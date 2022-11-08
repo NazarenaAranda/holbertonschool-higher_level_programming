@@ -9,7 +9,7 @@
 
 	>>> q_t(7)
 	Traceback (most recent call last):
-	AttributeError: 'int' object has no attribute 'split'
+	TypeError: text must be a string
 
 	>>> q_t("Hola" 7)
 	Traceback (most recent call last):

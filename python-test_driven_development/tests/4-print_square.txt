@@ -1,0 +1,27 @@
+>>> c_t = __import__('4-print_square').print_square
+
+	>>> c_t()
+	Traceback (most recent call last):
+	TypeError: print_square() missing 1 required positional argument: 'size'
+
+	>>> c_t("Nazarena")
+	Traceback (most recent call last):
+	TypeError: 'str' object cannot be interpreted as an integer
+
+	>>> c_t(-7)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
+
+	>>> c_t(1, 3)
+	Traceback (most recent call last):
+	TypeError: print_square() takes 1 positional argument but 2 were given
+
+	>>> c_t(8)
+	########
+	########
+	########
+    	########
+   	########
+    	########
+    	########
+    	########

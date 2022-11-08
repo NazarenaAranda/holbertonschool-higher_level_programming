@@ -1,1 +1,25 @@
-test 8
+>>> s_t = __import__('7-base_geometry').BaseGeometry
+
+	>>> s_t("Naza")
+	Traceback (most recent call last):
+	TypeError: BaseGeometry() takes no arguments
+
+	>>> s_t.area()
+	Traceback (most recent call last):
+	TypeError: area() missing 1 required positional argument: 'self'
+
+	>>> s_t('age', [7])
+	Traceback (most recent call last):
+	TypeError: BaseGeometry() takes no arguments
+
+	>>> s_t.integer_validator('name', None)
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+	>>> s_t.area(7)
+	Traceback (most recent call last):
+	Exception: area() is not implemented
+
+	>>> s_t.integer_validator('age', [12, 19])
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 1 required positional argument: 'value'

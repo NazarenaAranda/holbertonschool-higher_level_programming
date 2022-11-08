@@ -1,1 +1,19 @@
-test
+>>> p_t = __import__('1-my_list').MyList
+
+	>>> p_t.print_sorted("Naza")
+	['N', 'a', 'a', 'z']
+
+	>>> p_t(-3)
+	Traceback (most recent call last):
+	TypeError: 'int' object is not iterable
+
+	>>> p_t.append(1, 2, 3)
+	Traceback (most recent call last):
+	TypeError: descriptor 'append' for 'list' objects doesn't apply to a 'int' object
+
+	>>> p_t(7)
+	Traceback (most recent call last):
+	TypeError: 'int' object is not iterable
+
+	>>> p_t()
+	[]

@@ -1,0 +1,16 @@
+>>> q_t = __import__('5-text_indentation').text_indentation
+
+	>>> q_t("Naza")
+	Naza
+
+	>>> q_t()
+	Traceback (most recent call last):
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+	>>> q_t(7)
+	Traceback (most recent call last):
+	AttributeError: 'int' object has no attribute 'split'
+
+	>>> q_t("Hola" 7)
+	Traceback (most recent call last):
+	SyntaxError: invalid syntax

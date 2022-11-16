@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" """
+"""script that prints the first State object from the database hbtn_0e_6_usa"""
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
 from model_state import Base, State
+
 
 if __name__ == "__main__":
     db = 'mysql+mysqldb://{}:{}@localhost/{}'.format(argv[1],
